@@ -1,18 +1,11 @@
-Object.prototype.isVisible = function(id){
+Object.prototype.isVisible = function(){
 
-	var viewport = {
-		height: null,
-		width: null
-	};
+	var rect = this.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
 	
-	var bounds = {
-		x: (this.offsetLeft - this.scrollLeft + this.clientLeft), // Verify
-		y: (this.offsetTop - this.scrollTop + this.clientTop),	
-	};
-	
-	// Is it visible?
-	if ( )
-		
-	return 1;
-
 };
