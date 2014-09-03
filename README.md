@@ -49,13 +49,11 @@ Usage
 
 ```
 
-##### Configure Plugins. Instructions in following README.md files
+### Configure 
 
-* plugins/dropbox/README.md
-* plugins/github/README.md
-* plugins/googledrive/README.md
-
-
+* Set all class to all lazy loading images [ .lazy_images_class ]
+* Set parameter with the image to load [ lazy-image-src ]
+* Call loadViewport to load all images that can be found in the viewport.
 
 
 License
