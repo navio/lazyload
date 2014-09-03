@@ -27,11 +27,18 @@ Tech
 
 Dillinger uses a number of open source projects to work properly:
 
-* [Alberto Navarro] - Web Developer
+* [Alberto NAvarro] - Web Developer
 
 
-Installation
+Usage
 --------------
+```html
+<img src="blanc.png" class="lazy_images_class" lazy-image-src="http://domain.com/hQ.png" />
+<img src="blanc.png" class="lazy_images_class" lazy-image-src="http://domain.com/sQ.png" />
+
+
+```
+
 
 ```javascript
     var ll = lazyload('.lazy_images_class','lazy-image-src')
